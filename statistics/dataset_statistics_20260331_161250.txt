@@ -1,0 +1,226 @@
+ALIBABA MICROSERVICE DATASET — STATISTICAL SUMMARY
+Generated: 2026-03-31 16:12:50
+Dataset:   937,986 rows × 8 columns
+Services:  1303
+============================================================
+
+STAT1_CPU_UTILIZATION
+----------------------------------------
+{
+  "percentiles_cores": {
+    "p50": 2.2968,
+    "p75": 8.5862,
+    "p90": 31.1733,
+    "p95": 58.4401,
+    "p99": 182.887
+  },
+  "services_below_10_cores": 1058,
+  "total_services": 1303,
+  "pct_services_below_10_cores": 81.2,
+  "p95_cores": 58.4401
+}
+
+STAT2_NODE_STRESS_VS_RT
+----------------------------------------
+{
+  "high_stress_above_40pct": {
+    "sample_count": 920301,
+    "avg_response_time_ms": 36.3413,
+    "p75_response_time_ms": 34.5969
+  },
+  "low_stress_below_10pct": {
+    "sample_count": 6619,
+    "avg_response_time_ms": 138.4931,
+    "p75_response_time_ms": 24.0039
+  },
+  "rt_degradation_pct": -73.76
+}
+
+STAT3_WORKLOAD_IMBALANCE
+----------------------------------------
+{
+  "total_services": 1303,
+  "total_traffic_calls": 13498874406.633404,
+  "hotspot_analysis": {
+    "top_5pct": {
+      "service_count": 65,
+      "traffic_share_pct": 62.59
+    },
+    "top_10pct": {
+      "service_count": 130,
+      "traffic_share_pct": 77.33
+    },
+    "top_20pct": {
+      "service_count": 260,
+      "traffic_share_pct": 89.44
+    }
+  }
+}
+
+STAT4_COMMUNICATION_PARADIGM
+----------------------------------------
+{
+  "total_calls": 13517808696.553791,
+  "breakdown": {
+    "RPC_Provider": {
+      "total_calls": 6136091925.316665,
+      "percentage": 45.39
+    },
+    "RPC_Consumer": {
+      "total_calls": 4976035914.533333,
+      "percentage": 36.81
+    },
+    "Message_Queue": {
+      "total_calls": 1552825769.5103755,
+      "percentage": 11.49
+    },
+    "HTTP": {
+      "total_calls": 852855087.1934166,
+      "percentage": 6.31
+    }
+  }
+}
+
+STAT5_DATASET_SCALE
+----------------------------------------
+{
+  "total_rows": 937986,
+  "total_columns": 8,
+  "unique_services": 1303,
+  "duration_minutes": 719.0,
+  "duration_hours": 11.98,
+  "null_counts": {
+    "avg_response_time": {
+      "count": 2752,
+      "percentage": 0.29
+    }
+  }
+}
+
+STAT6_REPLICA_DISTRIBUTION
+----------------------------------------
+{
+  "min": 1,
+  "max": 2717,
+  "mean": 73.89,
+  "percentiles": {
+    "p25": 7,
+    "p50": 22,
+    "p75": 67,
+    "p90": 181,
+    "p95": 323,
+    "p99": 679
+  }
+}
+
+STAT7_TRAFFIC_DISTRIBUTION
+----------------------------------------
+{
+  "mean": 14391.34,
+  "max": 247573664.38,
+  "zero_traffic_rows": 9010,
+  "zero_traffic_pct": 0.96,
+  "percentiles": {
+    "p50": 1239.24,
+    "p75": 7324.01,
+    "p90": 27340.52,
+    "p95": 65213.19,
+    "p99": 215945.35
+  }
+}
+
+STAT8_NODE_STRESS
+----------------------------------------
+{
+  "mean": 0.637,
+  "mean_pct": 63.7,
+  "high_stress_rows": 920301,
+  "high_stress_pct": 98.11,
+  "percentiles": {
+    "p25": 0.6171,
+    "p50": 0.665,
+    "p75": 0.6886,
+    "p90": 0.7068,
+    "p95": 0.7188
+  }
+}
+
+STAT9_CPU_SPIKES
+----------------------------------------
+{
+  "mean_cpu": 13.935,
+  "std_cpu": 56.6291,
+  "spike_threshold_2sigma": 127.1933,
+  "spike_events": 16065,
+  "spike_events_pct": 1.71,
+  "services_with_spikes": 32
+}
+
+STAT10_MEMORY_CPU_CORRELATION
+----------------------------------------
+{
+  "correlation_coefficient": 0.8348,
+  "interpretation": "Strong \u2014 memory could be added as feature",
+  "mean_memory": 48.4656,
+  "max_memory": 1882.9963
+}
+
+STAT11_RESPONSE_TIME
+----------------------------------------
+{
+  "non_null_rows": 935234,
+  "non_null_pct": 99.71,
+  "mean_ms": 37.0015,
+  "median_ms": 14.5474,
+  "max_ms": 459909.3159,
+  "percentiles_ms": {
+    "p75": 34.5871,
+    "p90": 77.2103,
+    "p95": 122.1679,
+    "p99": 346.8626
+  }
+}
+
+STAT12_PER_SERVICE_VARIABILITY
+----------------------------------------
+{
+  "median_cv": 0.1006,
+  "top5_highest_cpu_services": [
+    {
+      "msname": "315f624d255fc7680cb985a3e0796397bc18baa89d4226331ebeae5a62de747f",
+      "mean_cpu": 1587.6286,
+      "std_cpu": 66.8749,
+      "max_cpu": 1712.0461,
+      "cv": 0.0421
+    },
+    {
+      "msname": "2be3b98bfce0e36bfa57f93d594bb1e183b434540c5bce38233a5dc2e9b80a1b",
+      "mean_cpu": 592.2892,
+      "std_cpu": 42.0021,
+      "max_cpu": 767.946,
+      "cv": 0.0709
+    },
+    {
+      "msname": "28664e7ba60702984ae3f84d4b084785897495e3b7f28717bda80797dc5468b6",
+      "mean_cpu": 421.0427,
+      "std_cpu": 85.8148,
+      "max_cpu": 645.7561,
+      "cv": 0.2038
+    },
+    {
+      "msname": "b3b7130eda7fa74cdb22efdbddf25c28f5dca36bc346bb97ea639644ed766376",
+      "mean_cpu": 350.0267,
+      "std_cpu": 40.4417,
+      "max_cpu": 530.6815,
+      "cv": 0.1155
+    },
+    {
+      "msname": "9a3ef4d24dd4e7fb8baaa9e30aea1395caa50f583630f69047c8e20f2e8d9554",
+      "mean_cpu": 304.0421,
+      "std_cpu": 24.698,
+      "max_cpu": 446.4706,
+      "cv": 0.0812
+    }
+  ]
+}
+
